@@ -1,0 +1,18 @@
+.entry-wrap {
+    padding-top: 10px;
+}
+.entry-wrap a{
+    width:20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.entry-wrap img{
+    width: 45px;
+    height: 45px;
+}
+.entry-title{
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}

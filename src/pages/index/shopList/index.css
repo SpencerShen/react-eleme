@@ -1,0 +1,124 @@
+.shoplist-content{
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.shoplist-shopinfo{
+    padding: 0 10px;
+    display: flex;
+}
+.shoplist-shoplogo{
+    width: 65px;
+    height: 65px;
+    background-color: #999;
+}
+.shoplist-shopmain{
+    display: flex;
+    padding-left: 10px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shoplist-mainline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shoplist-shopname{
+    display: flex;
+    color: #333;
+    font-size: 16px;
+    align-items: center;
+}
+.shopname-premium{
+    margin-right: 5px;
+    color: #6f3f15;
+    background-image: linear-gradient(-139deg,#fff100,#ffe339);
+    font-size: 12px;
+    padding: 1px 2px;
+    line-height: 12px;
+}
+.rate-img{
+    margin-right: 5px;
+}
+.shopname-ratewrap span{
+    font-size: 9px;
+    color:#666;
+    margin-right: 5px;
+}
+.shopname-delivery{
+    color:#fff;
+    background-image: linear-gradient(45deg,#0085ff,#0af);
+    font-size: 12px;
+    line-height: 12px;
+    padding: 1px;
+}
+.shopname-moneylimit-wrap,.shopname-distance-time-wrap{
+    font-size: 9px;
+    color:#666;
+}
+.shopname-moneylimit-wrap span+span:before,.shopname-distance-time-wrap span+span:before{
+    margin: 2px;
+    color: #ddd;
+    content: "|";
+}
+.shoplist-activity-wrap{
+    padding-left: 85px;
+}
+.activity-line{
+    margin-top: 10px;
+}
+.activity-minitag{
+    font-size: 9px;
+    color: #333;
+    border: 1px solid #999;
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 10px;
+}
+.activity-choose{
+    display: flex;
+}
+.activity-list{
+    flex: 1;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.activity-row{
+    display: flex;
+    font-size: 10px;
+    color: #666;
+    align-items: center;
+}
+.activity-icon{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 2px;
+}
+.activity-desc{
+    display: inline-block;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.activity-btn{
+    padding: 3px 10px 0 0;
+    font-size: 9px;
+    color: #999;
+}
+.activity-btn img{
+    margin-left: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.icon-open{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
