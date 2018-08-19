@@ -15,6 +15,12 @@ class Index extends React.Component {
       shoplist: []
     };
   }
+  goToShopList(shopId){
+    this.props.history.push({
+      pathname:'/detail',
+      search:`id=${shopId}`
+    })
+  }
   componentDidMount() {   
     //首页顶部是个入口
     axios
@@ -47,7 +53,7 @@ class Index extends React.Component {
         <div className="shoplist-title">推荐商家</div>
         <FilterHeader />
         {this.state.shoplist.map((shopData) => (
-          <ShopList key={shopData.restaurant.id} shoplist={shopData} />
+          <ShopList key={shopData.restaurant.id} shoplist={shopData} handleClick={()=>this.goToShopList(shopData.restaurant.id)} />
         ))}
       </div>
     );

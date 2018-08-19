@@ -15,7 +15,7 @@ class ShopList extends React.Component {
     let { shoplist } = this.props;
     let reg = /.*png$/;
     return (
-      <div className="shoplist">
+      <div className="shoplist" onClick={this.props.handleClick}>
         <div className="shoplist-content">
           <div className="shoplist-shopinfo">
             <img className="shoplist-shoplogo" src={`https://fuss10.elemecdn.com/${shoplist.restaurant.image_path}${reg.test(shoplist.restaurant.image_path)?'.png':'.jpeg'}?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/`} alt=""/>
